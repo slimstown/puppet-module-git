@@ -34,6 +34,10 @@ The `git::client` class installs the git client:
 
     include git::client
 
+The `git::hub` class installs [hub][hub]:
+
+    include git::hub
+
 The `git::server` class creates a git user which can be used for
 hosting git repositories over ssh:
 
@@ -56,3 +60,6 @@ You can use `git::repo` to create bare repositories under the git user's
 home directory which can be pushed to over ssh:
 
     git::repo { "blog": }
+
+
+[hub]: http://defunkt.io/hub/
